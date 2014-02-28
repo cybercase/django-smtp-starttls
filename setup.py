@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='django-smtp-starttls',
-    version='1.0',
+    version='1.0.1',
     description='Custom SSL params for Django email backend',
     author='Stefano Brilli',
     author_email='stefanobrilli@gmail.com',
