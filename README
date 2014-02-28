@@ -1,0 +1,15 @@
+If you bumped into this error while using your django EmailBackend:
+
+"Connection unexpectedly closed: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1504)"
+
+here you can find a quite clear description of the problem, and solution.
+
+http://stackoverflow.com/questions/17434143/hotmail-ssl3-version-number-error-using-smtp
+
+And if you don't like the idea of "copying" the entire smtplib.py, this package is for you!
+
+Usage:
+
+in your settings.py set:
+
+EMAIL_BACKEND = 'django_smtp_starttls.SSLv3EmailBackend'  # or SSLv2EmailBackend, TLSv1EmailBackend
