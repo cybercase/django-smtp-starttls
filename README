@@ -12,4 +12,4 @@ Usage:
 
 in your settings.py set:
 
-EMAIL_BACKEND = 'django_smtp_starttls.SSLv3EmailBackend'  # or SSLv2EmailBackend, TLSv1EmailBackend
+EMAIL_BACKEND = 'django_smtp_starttls.SSLv3EmailBackend'  # or SSLv23EmailBackend, TLSv1EmailBackend
