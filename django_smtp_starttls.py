@@ -72,12 +72,6 @@ class SSLv23EmailBackend(SSLv3EmailBackend):
     }
 
 
-class SSLv2EmailBackend(SSLv3EmailBackend):
-    WRAP_SOCKET_PARAMS = {
-        'ssl_version': ssl.PROTOCOL_SSLv2
-    }
-
-
 class TLSv1EmailBackend(SSLv3EmailBackend):
     WRAP_SOCKET_PARAMS = {
         'ssl_version': ssl.PROTOCOL_TLSv1
